@@ -1,0 +1,31 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: nazuna293
+      url-base: https://github.com/nazuna293
+    - name: kot149
+      url-base: https://github.com/kot149
+    - name: ssbb
+      url-base: https://github.com/ssbb
+    - name: caksoylar
+      url-base: https://github.com/caksoylar  
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: nazuna293
+      revision: main
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
+    - name: zmk-listeners
+      remote: ssbb
+      revision: v1
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
+  self:
+    path: config

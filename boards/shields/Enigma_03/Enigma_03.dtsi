@@ -1,4 +1,4 @@
-include <physical_layouts.dtsi>
+#include <physical_layouts.dtsi>
 
 / {
     enigma_layout: enigma_layout {

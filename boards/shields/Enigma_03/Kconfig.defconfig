@@ -1,0 +1,6 @@
+if SHIELD_Enigma_03
+
+config ZMK_KEYBOARD_NAME
+    default "Enigma_03"
+
+endif

@@ -1,11 +1,26 @@
 #include <physical_layouts.dtsi>
 
 / {
-    enigma_layout: enigma_layout {
+    chosen {
+        zmk,kscan = &kscan_0;
+        zmk,studio-rpc = &studio_usb;
+        zmk,physical-layout = &layout_0;
+    };
+
+    kscan_0: kscan_0 {
+        compatible = "zmk,kscan-gpio-charlieplex";
+        interrupt-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    };
+
+    studio_usb: studio_usb {
+        compatible = "zmk,studio-rpc-usb-uart";
+    };
+
+    layout_0: layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_03_layout";
-        transform = <&default_transform>;
-        kscan = <&default_kscan>;
+        transform = <&transform_0>;
+        kscan = <&kscan_0>;
 
         keys = <
             &key_physical_attrs 100 100   0   0 0 0 0

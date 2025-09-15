@@ -44,6 +44,10 @@
     };
 };
 
+&trackball_listener {
+    input-processors = <&zip_mouse_gesture>;
+};
+
 / {
     layer_listeners {
         compatible = "zmk,layer-listeners";

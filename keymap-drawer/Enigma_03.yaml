@@ -1,0 +1,457 @@
+layout: {zmk_keyboard: Enigma_03}
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - UP ARROW
+  - BACKSPACE
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - {t: SPACE, h: '1'}
+  - {t: ENTER, h: '2'}
+  - '`'
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  '1':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1', type: held}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '2':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - {t: BACKSPACE, type: held}
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '3':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - '&bootloader'
+  - LCTRL
+  - LEFT WIN
+  - {t: '`', type: held}
+  - {t: SPACE, h: '1', type: held}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '4':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '5':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '6':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '7':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '8':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '9':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  '10':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - /
+  - LCTRL
+  - LEFT WIN
+  - '`'
+  - {t: SPACE, h: '1'}
+  - BACKSPACE
+  - ENTER
+  - {t: ENTER, h: '2'}
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+combos:
+- p: [33, 34]
+  k: '3'
+  l: ['1']

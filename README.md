@@ -12,4 +12,4 @@
 
 ※レイヤーに推移している間はALTキーが押されている状態になっています。
 
-![](../keymap-drawer/Enigma_03.svg)
+![](keymap-drawer/Enigma_03.svg)

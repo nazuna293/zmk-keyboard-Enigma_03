@@ -14,16 +14,16 @@ config ZMK_MOUSE
 	default y
 
 config ZMK_POINTING
-  default y
+	default y
 
 config SPI
-  default y
+	default y
 
 config INPUT
-  default y
+	default y
 
 config NFCT_PINS_AS_GPIOS
-  default y
+	default y
 
 # Battery
 config ZMK_BATTERY

@@ -124,11 +124,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - Y
   - U
   - I
@@ -153,9 +153,9 @@ layers:
   - M
   - ','
   - .
-  - /
+  - BT CLR
+  - BT CLR ALL
   - '&bootloader'
-  - LCTRL
   - LEFT WIN
   - {t: '`', type: held}
   - {t: SPACE, h: '1', type: held}

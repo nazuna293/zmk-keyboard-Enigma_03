@@ -12,7 +12,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define SCROLL 5
 #define ARROW 6
-#define ALT_TAB_TB 7
+#define to_ALT 7
 
 &zip_mouse_gesture {
     stroke-size = <300>; // Optional (default: 500)
@@ -46,26 +46,28 @@
 };
 
 / {
+    // zmk-listeners
+
     layer_listeners {
         compatible = "zmk,layer-listeners";
 
         release_alt {
-            layers = <ALT_TAB_TB>;
+            layers = <to_ALT>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
-        };
-
-        release_ctrl {
-            layers = <CTRL_TAB_TB>;
-            bindings = <&kt_on LCTRL &kt_off LCTRL>;
         };
     };
 
     macros {
+        // zmk-listeners
+
         to_kp: to_kp {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+            label = "to_kp";
         };
+
+        // zmk-listeners
 
         mo_to_0: mo_to_0 {
             compatible = "zmk,behavior-macro-one-param";
@@ -81,49 +83,29 @@
                 <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&to 0>;
+
+            label = "MO_to_0";
         };
     };
 
     behaviors {
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        // Layout shift
 
-            tap-ms = <20>;
+        original_key_press: original_key_press {
+            compatible = "zmk,behavior-key-press";
+            #binding-cells = <1>;
+            label = "KEY_PRESS";
         };
 
-        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+        // Layout shift
 
-            tap-ms = <20>;
+        kp: key_press {
+            compatible = "zmk,behavior-layout-shift-key-press";
+            #binding-cells = <1>;
+            label = "LAYOUT_SHIFT_KEY_PRESS";
         };
 
-        arrow_left_right: behavior_sensor_rotate_arrow_le {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LEFT>, <&kp RIGHT>;
-
-            tap-ms = <20>;
-        };
-
-        arrow_up_down: behavior_sensor_rotate_arrow_up {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp UP>, <&kp DOWN>;
-
-            tap-ms = <20>;
-        };
-
-        page_up_down: behavior_sensor_rotate_page_up_ {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp PAGE_UP>, <&kp PAGE_DOWN>;
-
-            tap-ms = <20>;
-        };
+        // zmk-listeners
 
         kt_on: key_toggle_on_only {
             compatible = "zmk,behavior-key-toggle";
@@ -132,6 +114,8 @@
             toggle-mode = "on";
         };
 
+        // zmk-listeners
+
         kt_off: key_toggle_off_only {
             compatible = "zmk,behavior-key-toggle";
             #binding-cells = <1>;
@@ -139,8 +123,11 @@
             toggle-mode = "off";
         };
 
+        // zmk-listeners
+
         lt_to_0: lt_to_0 {
             compatible = "zmk,behavior-hold-tap";
+            label = "LT_to_0";
             bindings = <&mo_to_0>, <&kp>;
 
             #binding-cells = <2>;
@@ -149,12 +136,32 @@
             flavor = "balanced";
         };
 
-        td_alt_f4: td_alt_f4 {
+        tp1: tab_ctrl_q {
             compatible = "zmk,behavior-tap-dance";
+            label = "tab_ctrl_q";
             #binding-cells = <0>;
-            bindings = <&kp F4>, <&kp LA(F4)>;
+            bindings = <&mt LCTRL TAB>, <&kp Q>;
+        };
 
-            tapping-term-ms = <250>;
+        tp2: shift_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "shift_ctrl";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT>, <&kp LCTRL>;
+        };
+
+        tp3: hz_toALT {
+            compatible = "zmk,behavior-tap-dance";
+            label = "hz_toALT";
+            #binding-cells = <0>;
+            bindings = <&lt_to_0 4 GRAVE>;
+        };
+
+        tp4: f7_toALT_f8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "f7_toALT_f8";
+            #binding-cells = <0>;
+            bindings = <&lt_to_0 4 F7>, <&kp F8>;
         };
     };
 
@@ -234,7 +241,7 @@
             >;
         };
 
-        ALT_TAB_TB {
+        to_ALT {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none

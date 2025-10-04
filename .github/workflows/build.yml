@@ -1,5 +1,5 @@
-name: Build ZMK firmware test
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK firmware
+on: [workflow_dispatch]
 
 jobs:
   build:

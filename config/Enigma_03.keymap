@@ -12,10 +12,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define SCROLL 5
 #define ARROW 6
-#define MEDIA 7
-#define CTRL_ALT_TAB_TB 8
-#define ALT_TAB_TB 9
-#define CTRL_TAB_TB 10
+#define ALT_TAB_TB 7
 
 &zip_mouse_gesture {
     stroke-size = <300>; // Optional (default: 500)
@@ -221,55 +218,28 @@
 
         SCROLL {
             bindings = <
-&kp Q      &kp W         &kp E      &kp R        &kp T          &kp Y      &kp U        &kp I            &kp O                    &kp P
-&kp A      &kp S         &kp D      &kp F        &kp G          &kp H      &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z      &kp X         &kp C      &kp V        &kp B          &kp N      &kp M        &kp COMMA        &kp DOT                  &kp SLASH  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp GRAVE  &lt 1 SPACE  &kp BACKSPACE  &kp ENTER  &lt 2 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         ARROW {
             bindings = <
-&kp Q      &kp W         &kp E      &kp R        &kp T          &kp Y      &kp U        &kp I            &kp O                    &kp P
-&kp A      &kp S         &kp D      &kp F        &kp G          &kp H      &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z      &kp X         &kp C      &kp V        &kp B          &kp N      &kp M        &kp COMMA        &kp DOT                  &kp SLASH  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp GRAVE  &lt 1 SPACE  &kp BACKSPACE  &kp ENTER  &lt 2 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU
-            >;
-        };
-
-        MEDIA {
-            bindings = <
-&kp Q      &kp W         &kp E      &kp R        &kp T          &kp Y      &kp U        &kp I            &kp O                    &kp P
-&kp A      &kp S         &kp D      &kp F        &kp G          &kp H      &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z      &kp X         &kp C      &kp V        &kp B          &kp N      &kp M        &kp COMMA        &kp DOT                  &kp SLASH  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp GRAVE  &lt 1 SPACE  &kp BACKSPACE  &kp ENTER  &lt 2 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU
-            >;
-        };
-
-        CTRL_ALT_TAB_TB {
-            bindings = <
-&kp Q      &kp W         &kp E      &kp R        &kp T          &kp Y      &kp U        &kp I            &kp O                    &kp P
-&kp A      &kp S         &kp D      &kp F        &kp G          &kp H      &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z      &kp X         &kp C      &kp V        &kp B          &kp N      &kp M        &kp COMMA        &kp DOT                  &kp SLASH  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp GRAVE  &lt 1 SPACE  &kp BACKSPACE  &kp ENTER  &lt 2 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         ALT_TAB_TB {
             bindings = <
-&kp Q      &kp W         &kp E      &kp R        &kp T          &kp Y      &kp U        &kp I            &kp O                    &kp P
-&kp A      &kp S         &kp D      &kp F        &kp G          &kp H      &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z      &kp X         &kp C      &kp V        &kp B          &kp N      &kp M        &kp COMMA        &kp DOT                  &kp SLASH  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp GRAVE  &lt 1 SPACE  &kp BACKSPACE  &kp ENTER  &lt 2 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU
-            >;
-        };
-
-        CTRL_TAB_TB {
-            bindings = <
-&kp Q      &kp W         &kp E      &kp R        &kp T          &kp Y      &kp U        &kp I            &kp O                    &kp P
-&kp A      &kp S         &kp D      &kp F        &kp G          &kp H      &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z      &kp X         &kp C      &kp V        &kp B          &kp N      &kp M        &kp COMMA        &kp DOT                  &kp SLASH  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp GRAVE  &lt 1 SPACE  &kp BACKSPACE  &kp ENTER  &lt 2 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
     };

@@ -11,6 +11,13 @@
 #define SCROLL 5
 #define ARROW 6
 
+&trackball {
+    cpi = <600>;
+    swap-xy;
+    // invert-x;
+    // invert-y;
+};
+
 &zip_mouse_gesture {
     stroke-size = <300>; // Optional (default: 500)
     enable-eager-mode; // Optional, but recommended

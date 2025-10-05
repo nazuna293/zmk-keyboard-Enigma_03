@@ -18,6 +18,7 @@
     // invert-y;
 };
 
+// mouse-gesture
 &zip_mouse_gesture {
     stroke-size = <300>; // Optional (default: 500)
     enable-eager-mode; // Optional, but recommended
@@ -53,6 +54,7 @@
 };
 
 &trackball_listener {
+    // mouse-gesture
     input-processors = <
         &zip_mouse_gesture
     >;
@@ -66,6 +68,7 @@
         process-next;
     };
 
+    // scroll-snap
     scroller {
         layers = <6>;
         input-processors = <
@@ -204,6 +207,7 @@
             tapping-term-ms = <250>;
         };
 
+        // mouse-gesture
         td6: gesture_td5 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: Enigma_03}
 layers:
   default:
-  - '&tp1'
+  - '&td1'
   - W
   - E
   - R
@@ -32,7 +32,7 @@ layers:
   - .
   - UP ARROW
   - BACKSPACE
-  - '&tp2'
+  - '&td2'
   - LEFT WIN
   - LEFT ALT
   - {t: SPACE, h: CTRL_NUM}

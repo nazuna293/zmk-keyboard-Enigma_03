@@ -48,7 +48,7 @@
 
 &mkp_input_listener {
     input-processors = <
-        &zip_temp_layer MOUSE 10000
+        &zip_temp_layer 4 10000
     >;
 };
 

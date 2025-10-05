@@ -8,9 +8,6 @@
 #include <scroll-snap.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define to_ALT 4
-#define SCROLL 5
-#define ARROW 6
 
 &trackball {
     cpi = <600>;
@@ -69,7 +66,7 @@
     };
 
     scroller {
-      layers = <5>;
+      layers = <6>;
       input-processors = <
           &zip_xy_to_scroll_mapper
           &zip_scroll_snap
@@ -85,7 +82,7 @@
         compatible = "zmk,layer-listeners";
 
         release_alt {
-            layers = <to_ALT>;
+            layers = <5>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
         };
     };
@@ -220,7 +217,7 @@
             >;
         };
 
-        layer_1 {
+        CTRL_NUM {
             bindings = <
 &none      &none      &none      &none      &none      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &none
@@ -229,7 +226,7 @@
             >;
         };
 
-        layer_2 {
+        SHIFT_FN {
             bindings = <
 &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
@@ -238,12 +235,21 @@
             >;
         };
 
-        layer_3 {
+        setting {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &bt BT_CLR  &bt BT_CLR_ALL
 &bootloader   &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 

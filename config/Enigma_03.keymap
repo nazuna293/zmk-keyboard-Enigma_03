@@ -195,6 +195,23 @@
             #binding-cells = <0>;
             bindings = <&lt_to_0 4 F7>, <&kp F8>;
         };
+
+        td_rclick_close_tab: td_rclick_close_tab {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&mkp RCLK>, <&kp LC(W)>;
+
+            tapping-term-ms = <250>;
+        };
+
+        td_rclick_close_tab_mouse_gesture: td_rclick_close_tab_mouse_gesture {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mouse_gesture>, <&td_rclick_close_tab>;
+
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     combos {

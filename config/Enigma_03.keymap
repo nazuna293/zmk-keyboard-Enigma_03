@@ -18,18 +18,6 @@
     // invert-y;
 };
 
-&mouse_gesture_kp {
-    tapping-term-ms = <200>;
-    quick-tap-ms = <250>;
-    flavor = "balanced";
-};
-
-&mouse_gesture_mkp {
-    tapping-term-ms = <200>;
-    quick-tap-ms = <250>;
-    flavor = "balanced";
-};
-
 &zip_mouse_gesture {
     stroke-size = <300>; // Optional (default: 500)
     enable-eager-mode; // Optional, but recommended

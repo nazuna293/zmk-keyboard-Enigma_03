@@ -46,7 +46,9 @@
 };
 
 &trackball_listener {
-    input-processors = <&zip_mouse_gesture>;
+    input-processors = <
+        &zip_mouse_gesture
+    >;
     scroller {
       layers = <5>;
       input-processors = <

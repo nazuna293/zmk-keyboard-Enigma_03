@@ -13,9 +13,6 @@
 &trackball {
     cpi = <600>;
     swap-xy;
-
-    // invert-x;
-    // invert-y;
 };
 
 // mouse-gesture
@@ -45,8 +42,10 @@
     };
 };
 
+// auto-mouse
 &zip_temp_layer { require-prior-idle-ms = <200>; };
 
+// auto-mouse
 &mkp_input_listener {
     input-processors = <
         &zip_temp_layer 4 10000
@@ -59,6 +58,7 @@
         &zip_mouse_gesture
     >;
 
+    // auto-mouse
     auto-mouse-layer {
         layers = <1 4>;
         input-processors = <

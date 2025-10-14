@@ -5,13 +5,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan_0;
-        zmk,studio-rpc = &studio_usb;
         zmk,physical-layout = &layout_0;
-    };
-
-    studio_usb: studio_usb {
-        compatible = "zmk,studio-rpc-usb-uart";
     };
 
     trackball_listener: trackball_listener {
